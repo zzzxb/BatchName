@@ -1,0 +1,26 @@
+Batch Name Args List:
+
+java -jar BatchName.jar -h
+java -jar BatchName.jar -v
+java -jar BatchName.jar -d DirPath -l
+
+java -jar BatchName.jar -d DirPath TYPE args
+
+java -jar BatchName.jar -d DirPath suf -o oldSuf -n newSuf
+java -jar BatchName.jar -d DirPath seq -n newName
+java -jar BatchName.jar -d DirPath key -o oldKey -n newKey
+java -jar BatchName.jar -d DirPath sec -s StarNum -e EndNum -n newStr
+
+-f FileDirPath
+-o OldName
+-n NewName
+-s star
+-e end
+-h help
+-v version
+-l FileList
+TYPE [suffix,sequence,key,section]
+    suffix or suf
+    sequence or seq
+    key
+    section or sec
