@@ -9,8 +9,8 @@ import java.io.File;
  * @date 2020/5/10 19:25
  */
 public class KeyReplace {
-    private static String oldKey = "sheet";
-    private static String newKey = "seq";
+    private static String oldKey = "";
+    private static String newKey = "";
 
     public static void keyReplace(FileInfo fileInfo) {
         File[] files = fileInfo.getFiles();

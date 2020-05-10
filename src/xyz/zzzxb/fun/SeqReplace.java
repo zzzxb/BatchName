@@ -27,8 +27,8 @@ public class SeqReplace {
                         fileInfo.getDirPath()+ "/".concat(newName).concat(String.valueOf(count)).concat(suf);
                 file.renameTo(new File(name));
                 System.out.println("new: " + name);
+                count++;
             }
-            count++;
         }
     }
 

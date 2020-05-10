@@ -67,7 +67,7 @@ public class Launch {
                                 SuffixReplace.setOldSuffix(args[4]);
                             }
                             if (args[5].equalsIgnoreCase("-n")){
-                                SuffixReplace.setOldSuffix(args[6]);
+                                SuffixReplace.setNewSuffix(args[6]);
                             }
                             // 根据后缀替换
                             SuffixReplace.sufReplace(fileInfo.getFiles());
@@ -84,7 +84,7 @@ public class Launch {
                                 KeyReplace.setOldKey(args[4]);
                             }
                             if (args[5].equalsIgnoreCase("-n")) {
-                                KeyReplace.setOldKey(args[6]);
+                                KeyReplace.setNewKey(args[6]);
                             }
                             // key 替换
                             KeyReplace.keyReplace(fileInfo);
@@ -94,10 +94,10 @@ public class Launch {
                                 SecReplace.setStar(Integer.valueOf(args[4]));
                             }
                             if (args[5].equalsIgnoreCase("-e")) {
-                                SecReplace.setStar(Integer.valueOf(args[6]));
+                                SecReplace.setEnd(Integer.valueOf(args[6]));
                             }
                             if (args[7].equalsIgnoreCase("-n")) {
-                                SecReplace.setStar(Integer.valueOf(args[8]));
+                                SecReplace.setNewStr(args[8]);
                             }
                             // 区间替换
                             SecReplace.secReplace(fileInfo);
